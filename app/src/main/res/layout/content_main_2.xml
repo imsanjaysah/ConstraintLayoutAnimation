@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.logicare.treel.ui.customviews.DashboardActionView
+        android:id="@+id/action1"
+        android:layout_width="@dimen/home_screen_action_width"
+        android:layout_height="@dimen/home_screen_action_height"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/action3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/action2"
+        app:layout_constraintTop_toBottomOf="@+id/action4"
+        app:text="Button 1"
+        app:textColor="@android:color/white" />
+
+    <com.logicare.treel.ui.customviews.DashboardActionView
+        android:id="@+id/action2"
+        android:layout_width="@dimen/home_screen_action_width"
+        android:layout_height="@dimen/home_screen_action_height"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/action3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="Button 2"
+        app:textColor="@android:color/white" />
+
+    <com.logicare.treel.ui.customviews.DashboardActionView
+        android:id="@+id/action3"
+        android:layout_width="@dimen/home_screen_action_width"
+        android:layout_height="@dimen/home_screen_action_height"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/action2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="Button 3"
+        app:textColor="@android:color/white" />
+
+    <com.logicare.treel.ui.customviews.DashboardActionView
+        android:id="@+id/action4"
+        android:layout_width="@dimen/home_screen_action_width"
+        android:layout_height="@dimen/home_screen_action_height"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/action1"
+        app:layout_constraintEnd_toStartOf="@+id/action3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/action2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:text="Button 4"
+        app:textColor="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

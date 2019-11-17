@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_screen_action_width">100dp</dimen>
+    <dimen name="home_screen_action_height">100dp</dimen>
+    <dimen name="dashboard_action_view_radius">10dp</dimen>
+</resources>
